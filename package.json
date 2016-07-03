@@ -4,7 +4,8 @@
   "description": "web-test-demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test ./node_modules/.bin/_mocha test/**/*.js",
+    "cov": "NODE_ENV=test ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test/**/*.js -- --delay"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/theseawolves/web-test-demo#readme",
   "devDependencies": {
+    "istanbul": "^0.4.4",
     "mocha": "^2.5.3",
     "should": "^9.0.2"
   }
