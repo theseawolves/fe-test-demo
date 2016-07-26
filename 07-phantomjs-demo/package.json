@@ -1,0 +1,16 @@
+{
+  "name": "page-gulp-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "mocha-phantomjs": "^4.1.0",
+    "should": "^9.0.2"
+  }
+}
