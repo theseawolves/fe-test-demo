@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "coverage": "gulp test",
+    "text:summary": "istanbul report --root coverage text-summary",
+    "lcov": "istanbul report --root coverage lcov"
   },
   "author": "",
   "license": "ISC",
